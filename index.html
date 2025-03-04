@@ -1,20 +1,25 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>TailwindCSS</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="src/output.css">
-    </head>
-    <body>
-        <header class="container flex items-center py-4 px-10 mr-4">
-            <!--Logo-->
-            <div class="mx-auto md:flex items-center justify-between space-x-2 px-8 py-2">
-                <img src="assets/logo.svg" alt="NeoFunds" class="h-8 w-auto">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Funds - Investing Made Easy</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Custom styles for specific elements -->
+        
+</head>
+<body class="bg-white">
+    <!-- Navigation Bar -->
+    <header class="container mx-auto px-4 py-4">
+        <nav class="flex items-center justify-between">
+            <!-- Logo -->
+                <div class="text-emerald-500 mr-2">
+                    <img src="assets/logo.svg" class="h-10 w-10" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                </div>
             </div>
-                <!-- Search Bar -->
+            
+            <!-- Search Bar -->
             <div class="hidden md:block">
                 <div class="relative">
                     <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
@@ -22,12 +27,16 @@
                             <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
                         </svg>
                     </div>
-
                     <input type="text" placeholder="Search all mutual funds" class="bg-gray-100 rounded-md py-2 pl-10 pr-4 w-64 focus:outline-none focus:ring-2 focus:ring-emerald-500">
                 </div>
             </div>
+            
+            <!-- Menu Items -->
+            <div class="flex items-center space-x-6">
+                <a href="#" class="text-gray-600 hover:text-gray-900">Learn with Fund Guru</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Explore Funds</a>
+                <a href="#" class="text-gray-600 hover:text-gray-900">Ask the Expert</a>
+                <a href="#" class="text-gray-950 hover:text-blue-800">Login/Register</a>
             </div>
-        </header>        
-        <script src=""async defer></script>
-    </body>
-</html>
+        </nav>
+    </header>
