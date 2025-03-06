@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neo Funds - Investing Made Easy</title>
+    <!-- Include Tailwind CSS -->
+    <link rel="stylesheet" href="src/output.css">
+    <!-- Custom styles for specific elements -->
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+    </style>
+</head>
+<body class="bg-white">
+    <header class="flex flex-col gap-[30px] mb-[30px]">
+        <div class="h-[30px] bg-[#E4FAF4] hidden sm:flex justify-center  ">
+            <ul class="container flex justify-end items-center py-4 gap-4">
+                <li>
+                    <a href="#" class="flex gap-3 p-2">
+                        <img src="assets/phone.svg" alt="phone img">
+                        <span>Download App</span>
+                    </a>
+                </li>
+                <li class="h-4 w-px bg-gray-400"></li>
+                <li><a><span class="hover:cursor-pointer">Blog</span></a></li>
+                <li class="h-4 w-px bg-gray-400"></li>
+                <li><a class="flex gap-1.5 hover:cursor-pointer">Language : <span class="font-medium">English</span><img src="assets/dropdown.svg" alt="dropdown"></a></li>
+            </ul>
+    </div>
+    <div class="flex items-center justify-center p-4 sm:p-0">
+        <div class="container flex justify-between">
+            <img src="./assets/logo.svg" alt="logo">
+            
+            <ul class="hidden md:flex items-center gap-[26px]">
+                <li><div class="content-center">
+                    <div class="relative ml-auto mr-10 hidden lg:block md:block">
+                        <div class="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                            <svg class="h-5 w-5 text-gray-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor">
+                                <path fill-rule="evenodd" d="M8 4a4 4 0 100 8 4 4 0 000-8zM2 8a6 6 0 1110.89 3.476l4.817 4.817a1 1 0 01-1.414 1.414l-4.816-4.816A6 6 0 012 8z" clip-rule="evenodd" />
+                            </svg>
+                        </div>
+                        <input type="text" placeholder="Search all mutual funds" class="bg-gray-100 rounded-md py-2 pl-10 pr-4 w-64 focus:outline-none focus:ring-2 focus:ring-emerald-500">
+                    </div>
+                </div>
+                </li>
+                <li><a class="text-gray-500 hover:cursor-pointer hover:text-gray-900">Learn with Fund Guru</a></li>
+                <li><a class="text-gray-500 hover:cursor-pointer  hover:text-gray-900">Explore Funds</a></li>
+                <li><a class="text-gray-500 hover:cursor-pointer  hover:text-gray-900">Ask the Expert</a></li>
+                <li><a><span class="text-gray-500 font-medium hover:cursor-pointer hover:text-gray-900">Login/Register</span></a></li>
+            </ul>
+            
+        </div>
+    </div>
+            
+  
+<!-- Hero Section -->
+<section class="container mx-auto flex items-center justify-between gap-7 mb-10">
+    <div class="flex flex-col gap-7 mx-auto md:mx-0">
+        <div>
+            <h1 class="w-[283px] md:w-[416px] h-[100px] text-[30px] md:text-[40px]">Investing made <span class="relative">
+                <span class="absolute w-full h-2.5 bg-[#E4FAF4] left-0 bottom-0">
+               </span>
+               <span class="relative z-10">Easy</span>
+            </span> for you</h1>
+            <p class="text-[17px] text-gray-500 w-[335px] h-[145px] md:w-[455px] md:h-[116px] mt-[50px]">India's fastest growing investment platform with <span class="font-medium">20 Lac+ users</span>. We use edge-cutting technology to ensure that your personal information is fully encrypted and securely stored.</p>
+            <button class="mt-[15px] px-6 py-4 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 transition duration-300">Get Started Now</button>
+        </div>
+    </div>
+    <img src="assets/banner1.jpg" alt="banner img" class="mt-3 mr-4 mb-[48px] hidden sm:block w-[500px] h-[500px]">
+</section>  
+<!--Banner Section-->
+  <section class="w-full bg-[#E4FAF4] py-16">
+  <div class="container mx-auto px-8">
+    <div class="flex flex-col md:flex-row items-start justify-between">
+      <!--Content-->
+      <div class="md:w-1/2 mb-6 md:mb-0">
+        <h2 class="text-3xl font-bold text-gray-900 mb-4">Trusted by Millions of People</h2>
+        <p class="text-gray-600 max-w-lg">
+          We are registered as a distributor with AMFI, as an investment advisor with SEBI and platform partners with BSE.
+        </p>
+      </div>
+      <!-- Images 1,2,3 -->
+      <div class="md:w-1/2 flex justify-center space-x-10">
+        <div class="flex flex-col items-center">
+          <img src="assets/Investing1.svg" alt="AMFI" class="h-20 w-auto mb-3  outline-gray-100 hover:scale-110 transition duration-300">
+          <span class="text-xs text-gray-500">ATR-823742</span>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <img src="assets/Investing2.svg" alt="SEBI" class="h-20 w-auto mb-2  border-gray-400 hover:scale-110 transition duration-300">
+          <span class="text-xs text-gray-500">INA2000382</span>
+        </div>
+        
+        <div class="flex flex-col items-center">
+          <img src="assets/Investing3.svg" alt="BSE" class="h-20 w-auto mb-2 outline-gray-100 hover:scale-110 transition duration-300">
+          <span class="text-xs text-gray-500">M Code 2384</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+  <!--About Section--> 
+<section class="bg-white container mx-auto py-16 px-8">
+  <div class="flex flex-col md:flex-row items-center gap-12">
+    <!--Illustration -->
+    <div class="md:w-1/2 mb-8 md:mb-0">
+      <img src="assets/Fund.svg" alt="Fund Guru" class="max-w-md mx-auto">
+    </div>
+    
+    <!--Content -->
+    <div class="md:w-1/2">
+      <div class="text-gray-500 text-sm">About mutual funds</div>
+      <h2 class="text-3xl font-bold text-gray-900 mt-2 mb-6">Learn with Fund Guru</h2>
+      
+      <!-- List of Topics -->
+      <ul class="space-y-4">
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-5 h-5 rounded-sm flex items-center justify-center mr-3">
+            <img src="assets/ok.svg" class="w-3 h-3" alt="check">
+          </div>
+          <span class="text-gray-700 text-lg">Mutual Funds – Introduction and Working</span>
+        </li> 
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-5 h-5 rounded-sm flex items-center justify-center mr-3">
+            <img src="assets/ok.svg" class="w-3 h-3" alt="check">
+          </div>
+          <span class="text-gray-700 text-lg">Benefits of Investing in Mutual Funds</span>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-5 h-5  rounded-sm flex items-center justify-center mr-3">
+            <img src="assets/ok.svg" class="w-3 h-3" alt="check">
+          </div>
+          <span class="text-gray-700 text-lg">Mutual Fund Schemes and Types</span>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-5 h-5 rounded-sm flex items-center justify-center mr-3">
+            <img src="assets/ok.svg" class="w-3 h-3" alt="check">
+          </div>
+          <span class="text-gray-700 text-lg">Ways to Choose Mutual Fund Schemes</span>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-5 h-5 rounded-sm flex items-center justify-center mr-3">
+            <img src="assets/ok.svg" class="w-3 h-3" alt="check">
+          </div>
+          <span class="text-gray-700 text-lg">Offer Documents and Statements</span>
+        </li>
+        <li class="flex items-start">
+          <div class="flex-shrink-0 w-5 h-5 rounded-sm flex items-center justify-center mr-3">
+            <img src="assets/ok.svg" class="w-3 h-3" alt="check">
+          </div>
+          <span class="text-gray-700 text-lg">Transactions in Mutual Funds</span>
+        </li>
+      </ul>
+      
+      <!-- Call to Action Buttons -->
+      <div class="mt-12 flex items-center gap-6">
+        <button class="px-6 py-3 bg-[#00D09C] text-white font-medium rounded hover:bg-emerald-600 transition">
+          Know More
+        </button>
+        <a href="#" class="flex items-center">
+          <span class="text-[#00D09C] font-medium mr-2 hover:text-emerald-300">Watch Video</span>
+          <div class="flex items-center justify-center">
+            <img src="assets/play.svg" class="w-8 h-8 ml-0.5" alt="Play">
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Ask the Expert Section -->
+<section class="bg-gradient-to-b from-[#E4FAF4] to-white p-0 md:p-20 mb-20">
+  <div class="container p-4 md:p-0  mx-auto flex justify-between">
+      <div class="flex flex-col gap-4">
+          <h1 class="text-3xl md:text-[40px] text-black max-sm:mt-[50px]">Ask the Expert</h1>
+          <p class="text-gray-500 max-sm:w-[335px] max-sm:h-[58px] ">You can schedule a meeting with an expense manager</p>
+          <div class="flex flex-col md:flex-row gap-5 md:mt-[50px]">
+              <div class="max-w-[260px] max-h-[349px]">
+                  <div class="bg-[#E8F9F5] w-[62px] h-[62px] flex justify-center items-center"><img src="assets/cash.svg" alt="cash" class=""></div>
+                  <h3 class="mb-5 max-sm:text-2xl max-sm:mt-[30px]">Investing made easy</h3>
+                  <p class="text-gray-500 mb-[50px] md:mb-[65px] max-sm:w-[335px]">Three simple options- cautions, balanced, adventurous.<br>Expert will take care of rest!</p>
+                  <button class="mt-[10px] px-6 py-3 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 transition duration-300">Invest Now</button>
+              </div>
+              <div class="max-w-[260px] max-h-[349px] max-sm:mt-[88px]">
+                  <div class="bg-[#E8F9F5] w-[62px] h-[62px] flex justify-center items-center"><img src="assets/Schedule.svg" alt="calender" class=""></div>
+                  <h3 class="mb-5 max-sm:text-2xl max-sm:mt-[30px]">Schedule a meeting</h3>
+                  <p class="text-gray-500 mb-[65px] max-sm:w-[335px]">Expert will give you the best advice. Schedule a meeting with the expert to know mutual funds better.</p>
+                  <button class="mt-[10px] px-6 py-3 bg-emerald-500 text-white rounded-md hover:bg-emerald-600 transition duration-300">Schedule Now</button>
+              </div>
+          </div>
+      </div>  
+      <img src="assets/Expert.png" alt="expert" class="max-sm:hidden ">
+  </div>
+</section>
+<!--App Section-->
+<section class="bg-gradient-to-b from-white to-gray-100 pb-5 md:pb-[115px]">
+    <div class="container p-4 md:p-0 mx-auto flex flex-col items-center gap-5  relative">
+        <h1 class="text-3xl max-sm:w-[335px] max-sm:h-[108px] text-center">Manage your Investment from your hand.</h1>
+        <p class="text-gray-500 max-sm:w-[334px] max-sm:h-[58px] w-[414px] h-[58px] text-center">Now you will be at ease of investing, buying and selling easier with just a click.</p>
+        <h3 class="mt-[30px] max-sm:text-2xl">Download the App now</h3>
+        <div class="flex gap-[30px]">
+            <a href="" class="max-sm:w-[152px] max-sm:h-[46px]"><img src="assets/app.svg" alt="app store"></a>
+            <a href="" class="max-sm:w-[152px] max-sm:h-[46px]"><img src="assets/app2.svg" alt="play store"></a>
+        </div>
+        <img src="assets/chat.svg" alt="chat" class="absolute max-sm:bottom-24 bottom-[-40px] right-0">
+    </div>
+</section>
+<!--Footer 1-->
+<section class="mt-16">
+    <div class="container p-4 md:p-0 flex flex-col md:flex-row justify-between mx-auto mb-5 max-sm:gap-[30px]">
+        <div>
+            <img src="assets/logo.png" alt="logo">
+            <h2 class="text-3xl">Neo Funds</h2>
+        </div>
+        <div class="flex gap-[60px] text-[17px] max-sm:hidden">
+            <div class="flex flex-col">
+                <p class="font-bold">Quick Links</p>
+                <ul class="text-gray-500 mt-[15px] space-y-3">
+                    <li><a href="">Explore Funds</a></li>
+                    <li><a href="">Direct Mutal Funds</a></li>
+                    <li><a href="">Personal Loan</a></li>
+                    <li><a href="">LoanPass</a></li>
+                </ul>
+                <p class="font-bold mt-[15px]">Write to us at</p>
+                <p class="text-gray-500 mt-[15px]">contact@neofund.com</p>
+            </div>
+            <div class="text-[17px]">
+                <p class="font-bold">Top Funded Houses</p>
+                <ul class="text-gray-500 mt-[15px] space-y-3">
+                    <li><a href="">SBI Mutal Fund</a></li>
+                    <li><a href="">HDFC Mutal Fund</a></li>
+                    <li><a href="">Reliance Mutal Fund</a></li>
+                    <li><a href="">L&amp;T Mutal Fund</a></li>
+                </ul>
+                <p class="font-bold mt-[15px]">Call Us At</p>
+                <div class="gap-[15px]">
+                    <p class="text-gray-500">+91-8130813864</p>
+                    <p class="text-gray-500">+91-8860039452</p>
+                </div>
+            </div>
+            <div class="text-[17px]">
+                <p class="font-bold">Resources</p>
+                <ul class="text-gray-500 mt-[15px] space-y-3">
+                    <li><a href="">Calculators</a></li>
+                    <li><a href="">Beginner’s Guide</a></li>
+                    <li><a href="">Sitemap</a></li>
+                </ul>
+                <p class="font-bold mt-[50px] mb-[15px]">Download the App</p>
+                <div class="gap-[15px] flex">
+                    <a href=""><img src="assets/app3.svg" alt="apple"></a>
+                    <a href=""><img src="assets/app4.svg" alt="playstore"></a>
+                </div>
+            </div>
+        </div>
+        <div class="flex flex-col gap-5 md:hidden">
+            <div class="flex justify-between items-center w-[335px] h-[52px] px-2.5 text-[17px] md:hidden border-[1px] border-[#F0F0F0]">
+                <a href="" class="text-black font-bold">Quick links</a>
+                <p class="text-gray-500">+</p>
+            </div>
+            <div class="flex justify-between items-center w-[335px] h-[52px] px-2.5 text-[17px] md:hidden border-[1px] border-[#F0F0F0]">
+                <a href="" class="text-black font-bold">Top Funded Houses</a>
+                <p class="text-gray-500">+</p>
+            </div>
+            <div class="flex justify-between items-center w-[335px] h-[52px] px-2.5 text-[17px] md:hidden border-[1px] border-[#F0F0F0]">
+                <a href="" class="text-black font-bold">Resources</a>
+                <p class="text-gray-500">+</p>
+            </div>
+        </div>
+        </div>
+    </div>
+</section>
+</body>
+<hr class="w-[100%] h-px border-gray-200">
+<footer>
+    <div class="container mx-auto  justify-between my-2.5 hidden md:flex">
+         
+        <p class="text-gray-500 text-xs">Copyright 2019 Mutal Funds. All rights reserved.</p>
+        <div class="flex gap-5">
+            <a href=""><img src="assets/social 1.svg" alt="facebook"></a>
+            <a href=""><img src="assets/social 2.svg" alt="instagram"></a>
+            <a href=""><img src="assets/social 4.svg" alt="google"></a>
+            <a href=""><img src="assets/social 3.svg" alt="twitter"></a>
+        </div>
+    </div>
+    <div class="container p-4 md:p-0 mx-auto flex flex-col items-center gap:10 justify-center my-2.5 md:hidden">
+        <div class="flex gap-5 mb-5">
+            <a href=""><img src="assets/social 1.svg" alt="facebook"></a>
+            <a href=""><img src="assets/social 2.svg" alt="instagram"></a>
+            <a href=""><img src="assets/social 4.svg" alt="google"></a>
+            <a href=""><img src="assets/social 3.svg" alt="twitter"></a>
+        </div>
+        <p class="text-gray-500 text-xs">Copyright 2019 Mutal Funds. All rights reserved.</p>
+    </div>
+</footer>
+</html> 
