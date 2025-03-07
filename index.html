@@ -25,21 +25,51 @@
 <body class="bg-white">
     <!-- === HEADER SECTION === -->
     <header class="flex flex-col gap-[30px] mb-[30px]">
-        <!-- Top bar - visible only on tablet and up -->
-        <div class="h-[30px] bg-[#E4FAF4] hidden sm:flex justify-center">
-            <ul class="container flex justify-end items-center py-4 gap-4">
-                <li>
-                    <a href="#" class="flex gap-3 p-2">
-                        <img src="assets/phone.svg" alt="phone img">
-                        <span>Download App</span>
-                    </a>
-                </li>
-                <li class="h-4 w-px bg-gray-400"></li>
-                <li><a><span class="hover:cursor-pointer">Blog</span></a></li>
-                <li class="h-4 w-px bg-gray-400"></li>
-                <li><a class="flex gap-1.5 hover:cursor-pointer">Language : <span class="font-medium">English</span><img src="assets/dropdown.svg" alt="dropdown"></a></li>
-            </ul>
-        </div>
+      <div class="h-[30px] bg-[#E4FAF4] hidden sm:flex justify-center">
+        <ul class="container flex justify-end items-center py-4 gap-4">
+            <li>
+                <a href="#" class="flex gap-3 p-2">
+                    <img src="assets/phone.svg" alt="phone img">
+                    <span>Download App</span>
+                </a>
+            </li>
+            <li class="h-4 w-px bg-gray-400"></li>
+            <li><a><span class="hover:cursor-pointer">Blog</span></a></li>
+            <li class="h-4 w-px bg-gray-400"></li>
+            
+            <!-- Language Dropdown -->
+            <li class="relative">
+                <!-- Language Selector -->
+                <button onclick="document.getElementById('language-menu').classList.toggle('hidden')" 
+                        class="flex items-center gap-1.5 hover:cursor-pointer focus:outline-none">
+                    Language : <span class="font-medium">English</span>
+                    <img src="assets/dropdown.svg" alt="dropdown">
+                </button>
+                
+                <!-- Dropdown Menu - Hidden by Default -->
+                <div id="language-menu" class="hidden absolute right-0 top-full mt-1 w-36 bg-white shadow-md rounded-md overflow-hidden z-10">
+                    <ul class="py-1">
+                        <li class="hover:bg-gray-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">English</a>
+                        </li>
+                        <li class="hover:bg-gray-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">French</a>
+                        </li>
+                        <li class="hover:bg-gray-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">Spanish</a>
+                        </li>
+                        <li class="hover:bg-gray-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">Hindi</a>
+                        </li>
+                        <li class="hover:bg-gray-100">
+                            <a href="#" class="block px-4 py-2 text-sm text-gray-700">German</a>
+                        </li>
+                    </ul>
+                </div>
+            </li>
+        </ul>
+    </div>
+        
         
        <!-- Main navigation with hamburger menu -->
 <div class="flex items-center justify-center p-4 sm:p-0">
@@ -343,7 +373,7 @@
                          aria-expanded="false" 
                          aria-controls="accordion-quick-links-body">
                       <span class="text-black font-bold">Quick links</span>
-                      <svg data-accordion-icon class="w-3 h-3 shrink-0 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                       </svg>
                   </button>
@@ -365,7 +395,7 @@
                          aria-expanded="false" 
                          aria-controls="accordion-funded-houses-body">
                       <span class="text-black font-bold">Top Funded Houses</span>
-                      <svg data-accordion-icon class="w-3 h-3 shrink-0 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                       </svg>
                   </button>
@@ -387,7 +417,7 @@
                          aria-expanded="false" 
                          aria-controls="accordion-resources-body">
                       <span class="text-black font-bold">Resources</span>
-                      <svg data-accordion-icon class="w-3 h-3 shrink-0 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
+                      <svg data-accordion-icon class="w-3 h-3 rotate-180 shrink-0 text-gray-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 10 6">
                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5 5 1 1 5"/>
                       </svg>
                   </button>
